@@ -11,9 +11,11 @@
 		68327AF32B050F490021E918 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68327AF22B050F490021E918 /* RecordView.swift */; };
 		68327AF72B050F4A0021E918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68327AF62B050F4A0021E918 /* Assets.xcassets */; };
 		68327AFA2B050F4A0021E918 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68327AF92B050F4A0021E918 /* Preview Assets.xcassets */; };
+		684707B22B0CE39A008196E7 /* RecordingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684707B12B0CE39A008196E7 /* RecordingFunction.swift */; };
 		68BD12332B0667930065A27C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD12322B0667930065A27C /* MainView.swift */; };
 		68CD59992B0529130004D970 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CD59982B0529130004D970 /* EditView.swift */; };
 		68E437C52B07B9F400D15FC5 /* AnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E437C42B07B9F400D15FC5 /* AnalyzeView.swift */; };
+		68F4D3C82B0E5C1C00EBEF73 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F4D3C72B0E5C1C00EBEF73 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +24,12 @@
 		68327AF22B050F490021E918 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		68327AF62B050F4A0021E918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68327AF92B050F4A0021E918 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		684707B12B0CE39A008196E7 /* RecordingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingFunction.swift; sourceTree = "<group>"; };
+		684707B32B0D1584008196E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = birdapp/Info.plist; sourceTree = "<group>"; };
 		68BD12322B0667930065A27C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		68CD59982B0529130004D970 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		68E437C42B07B9F400D15FC5 /* AnalyzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeView.swift; sourceTree = "<group>"; };
+		68F4D3C72B0E5C1C00EBEF73 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 		68327AE42B050F490021E918 = {
 			isa = PBXGroup;
 			children = (
+				684707B32B0D1584008196E7 /* Info.plist */,
 				68327AEF2B050F490021E918 /* Birdnet */,
 				68327AEE2B050F490021E918 /* Products */,
 			);
@@ -58,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				68327AF02B050F490021E918 /* BirdApp.swift */,
+				684707AE2B0CE222008196E7 /* Model */,
 				68E437C62B07BC3400D15FC5 /* Views */,
 				68327AF62B050F4A0021E918 /* Assets.xcassets */,
 				68327AF82B050F4A0021E918 /* Preview Content */,
@@ -71,6 +78,15 @@
 				68327AF92B050F4A0021E918 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		684707AE2B0CE222008196E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68F4D3C72B0E5C1C00EBEF73 /* Model.swift */,
+				684707B12B0CE39A008196E7 /* RecordingFunction.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		68E437C62B07BC3400D15FC5 /* Views */ = {
@@ -154,9 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F4D3C82B0E5C1C00EBEF73 /* Model.swift in Sources */,
 				68327AF32B050F490021E918 /* RecordView.swift in Sources */,
 				68CD59992B0529130004D970 /* EditView.swift in Sources */,
 				68E437C52B07B9F400D15FC5 /* AnalyzeView.swift in Sources */,
+				684707B22B0CE39A008196E7 /* RecordingFunction.swift in Sources */,
 				68BD12332B0667930065A27C /* MainView.swift in Sources */,
 				68327AF12B050F490021E918 /* BirdApp.swift in Sources */,
 			);
@@ -295,6 +313,8 @@
 				DEVELOPMENT_TEAM = T66N85ZKBW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = birdapp/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to identify the species";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +344,8 @@
 				DEVELOPMENT_TEAM = T66N85ZKBW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = birdapp/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to identify the species";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

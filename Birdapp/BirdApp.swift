@@ -14,7 +14,7 @@ struct BirdApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            RecordView()
         }
       
     }

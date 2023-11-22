@@ -10,19 +10,22 @@ import SwiftUI
 struct AnalyzeView: View {
     var body: some View {
         
-        ScrollView{
+        NavigationStack{
             
-            VStack(spacing: 100.0){
+            ScrollView{
                 
-                Image(decorative: "VisualizationOfRecording")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                
-                Text("List of Birds")
+                VStack(spacing: 100.0){
+                    
+                    Image(decorative: "VisualizationOfRecording")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    
+                    Text("List of Birds")
+                }
             }
+            .padding()
+            .navigationTitle("Analyze")
         }
-        .padding()
-        .navigationTitle("Analize")
     }
 }
 

@@ -10,9 +10,6 @@ import SwiftData
 
 struct RecordView: View {
 
-    @State var recorder = RecordingFunction()
-    @State private var record = false
-    
     var body: some View {
         
         NavigationStack{
@@ -27,16 +24,7 @@ struct RecordView: View {
                 
                     
                     Button(action: {
-                        
-                        record.toggle()
-                        
-                        if (record == true) {
-                            recorder.startRecording()
-                        } else {
-                            recorder.stopRecording()
-                        }
-//does record and store properly, still missing a way to access those data
-                       
+                        //record
                     } , label: {
                         ZStack {
                             Circle()
@@ -48,8 +36,7 @@ struct RecordView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 50)
                         }
-                         .padding(.horizontal)
-                         .accessibilityLabel("tap to start recording")
+                        .padding(.horizontal)
                         
                     })
                 }
