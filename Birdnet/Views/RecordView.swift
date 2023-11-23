@@ -10,7 +10,7 @@ import SwiftData
 
 struct RecordView: View {
 
-    @State var recorder = RecordingFunction()
+    @State private var recorder = RecordingFunction()
     @State private var record = false
     
     var body: some View {

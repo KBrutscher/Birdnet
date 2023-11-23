@@ -15,15 +15,16 @@
 import SwiftUI
 import Foundation
 import AVFoundation
+import Observation
 
-class RecordingFunction : NSObject , ObservableObject , AVAudioPlayerDelegate {
+ @Observable class RecordingFunction : NSObject , AVAudioPlayerDelegate {
     
    
     
     var audioRecorder : AVAudioRecorder!
     var audioPlayer : AVAudioPlayer!
     
-    @Published var isRecording : Bool = false
+    var isRecording : Bool = false
   
     
     override init(){
