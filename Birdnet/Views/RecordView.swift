@@ -50,12 +50,17 @@ struct RecordView: View {
                         }
                          .padding(.horizontal)
                          .accessibilityLabel("tap to start recording")
+                        // .accessibility(sortPriority: 0)
                         
                     })
                 }
+                .accessibilityElement(children: .contain)
+                .accessibilitySortPriority(-1)
             }
             .padding()
             .navigationTitle("Record")
+           // .accessibility(sortPriority: 1)
+            
         }
     }
 
