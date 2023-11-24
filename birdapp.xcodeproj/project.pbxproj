@@ -15,7 +15,6 @@
 		68BD12332B0667930065A27C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD12322B0667930065A27C /* MainView.swift */; };
 		68CD59992B0529130004D970 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CD59982B0529130004D970 /* EditView.swift */; };
 		68E437C52B07B9F400D15FC5 /* AnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E437C42B07B9F400D15FC5 /* AnalyzeView.swift */; };
-		68F4D3C82B0E5C1C00EBEF73 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F4D3C72B0E5C1C00EBEF73 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		68BD12322B0667930065A27C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		68CD59982B0529130004D970 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		68E437C42B07B9F400D15FC5 /* AnalyzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeView.swift; sourceTree = "<group>"; };
-		68F4D3C72B0E5C1C00EBEF73 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				68327AF02B050F490021E918 /* BirdApp.swift */,
-				684707AE2B0CE222008196E7 /* Model */,
+				684707AE2B0CE222008196E7 /* Functions */,
 				68E437C62B07BC3400D15FC5 /* Views */,
 				68327AF62B050F4A0021E918 /* Assets.xcassets */,
 				68327AF82B050F4A0021E918 /* Preview Content */,
@@ -80,13 +78,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		684707AE2B0CE222008196E7 /* Model */ = {
+		684707AE2B0CE222008196E7 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				68F4D3C72B0E5C1C00EBEF73 /* Model.swift */,
 				684707B12B0CE39A008196E7 /* RecordingFunction.swift */,
 			);
-			path = Model;
+			path = Functions;
 			sourceTree = "<group>";
 		};
 		68E437C62B07BC3400D15FC5 /* Views */ = {
@@ -170,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F4D3C82B0E5C1C00EBEF73 /* Model.swift in Sources */,
 				68327AF32B050F490021E918 /* RecordView.swift in Sources */,
 				68CD59992B0529130004D970 /* EditView.swift in Sources */,
 				68E437C52B07B9F400D15FC5 /* AnalyzeView.swift in Sources */,
